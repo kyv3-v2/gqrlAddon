@@ -1,6 +1,6 @@
-package cloudburst.rejects.commands;
+package me.ghosttypes.orion.commands;
 
-import cloudburst.rejects.arguments.ClientPosArgumentType;
+import me.ghosttypes.orion.arguments.ClientPosArgumentType;
 import com.mojang.brigadier.arguments.FloatArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import meteordevelopment.meteorclient.systems.commands.Command;
