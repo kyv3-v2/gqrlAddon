@@ -1,4 +1,4 @@
-package cloudburst.rejects.commands;
+package me.ghosttypes.orion.commands;
 
 import baritone.api.BaritoneAPI;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
@@ -6,12 +6,12 @@ import com.mojang.brigadier.exceptions.DynamicCommandExceptionType;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.events.packets.PacketEvent;
 import meteordevelopment.meteorclient.systems.commands.Command;
-import cloudburst.rejects.arguments.EnumArgumentType;
+import me.ghosttypes.orion.arguments.EnumArgumentType;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.ChatUtils;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.InvUtils;
-import cloudburst.rejects.utils.WorldGenUtils;
+import me.ghosttypes.orion.utils.WorldGenUtils;
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.command.CommandSource;
 import net.minecraft.entity.EntityType;
