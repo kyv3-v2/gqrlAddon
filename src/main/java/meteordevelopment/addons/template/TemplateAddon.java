@@ -26,7 +26,7 @@ public class GqrlAddon extends MeteorAddon {
 		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 
 		// Modules
-		Modules.get().add(new AutoMountBypass());
+		Modules.get().add(new AutoMountBypassDupe());
 		Modules.get().add(new ItemFrameDupe());
 
 		// Commands
