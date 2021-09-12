@@ -26,11 +26,11 @@ public class TemplateAddon extends MeteorAddon {
 		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 
 		// Modules
-		Modules.get().add(new Example());
-		Modules.get().add(new AnotherExample());
+		Modules.get().add(new AutoMountBypass());
+		Modules.get().add(new ItemFrameDupe());
 
 		// Commands
-		Commands.get().add(new ExampleCommand());
+		Commands.get().add(new CommandsCommand());
 
 		// HUD
 		HUD hud = Modules.get().get(HUD.class);
