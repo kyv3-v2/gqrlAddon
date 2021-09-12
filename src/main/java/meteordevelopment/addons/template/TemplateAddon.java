@@ -14,13 +14,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.lang.invoke.MethodHandles;
 
-public class TemplateAddon extends MeteorAddon {
+public class GqrlAddon extends MeteorAddon {
 	public static final Logger LOG = LogManager.getLogger();
-	public static final Category CATEGORY = new Category("Example");
+	public static final Category CATEGORY = new Category("Gqrl", Items.OBSIDIAN.getDefaultStack());
 
 	@Override
 	public void onInitialize() {
-		LOG.info("Initializing Meteor Addon Template");
+		LOG.info("Initializing GqrlAddon");
 
 		// Required when using @EventHandler
 		MeteorClient.EVENT_BUS.registerLambdaFactory("meteordevelopment.addons.template", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
@@ -30,7 +30,7 @@ public class TemplateAddon extends MeteorAddon {
 		Modules.get().add(new ItemFrameDupe());
 
 		// Commands
-		Commands.get().add(new CommandsCommand());
+		Commands.get().add(new GqrlCommand());
 
 		// HUD
 		HUD hud = Modules.get().get(HUD.class);

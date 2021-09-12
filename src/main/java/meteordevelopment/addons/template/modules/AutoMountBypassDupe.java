@@ -1,4 +1,4 @@
-package meteordevelopment.addons.modules;
+package meteordevelopment.addons.template.modules;
 
 import meteordevelopment.meteorclient.events.packets.PacketEvent;
 import meteordevelopment.meteorclient.events.world.TickEvent;
@@ -63,7 +63,7 @@ public class AutoMountBypassDupe extends Module {
     private int timer;
 
     public AutoMountBypassDupe() {
-        super(Categories.Misc, "auto-mount-bypass-dupe", "Automatically does the mount bypass dupe.");
+        super(Categories.Gqrl, "auto-mount-bypass-dupe", "Automatically does the mount bypass dupe.");
     }
 
     @Override

@@ -8,8 +8,8 @@ import net.minecraft.command.CommandSource;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class ExampleCommand extends Command {
-    public ExampleCommand() {
-        super("example", "Sends a message.");
+    public GqrlCommand() {
+        super("gqrl", "yes.");
     }
 
     @Override

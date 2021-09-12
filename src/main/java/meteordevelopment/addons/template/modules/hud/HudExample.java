@@ -10,6 +10,6 @@ public class HudExample extends DoubleTextHudElement {
 
     @Override
     protected String getRight() {
-        return "Dynamic right text";
+        return "GqrlAddon";
     }
 }
