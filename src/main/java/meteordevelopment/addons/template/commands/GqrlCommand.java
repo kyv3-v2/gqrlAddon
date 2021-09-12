@@ -7,7 +7,7 @@ import net.minecraft.command.CommandSource;
 
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
-public class ExampleCommand extends Command {
+public class GqrlCommand extends Command {
     public GqrlCommand() {
         super("gqrl", "yes.");
     }
