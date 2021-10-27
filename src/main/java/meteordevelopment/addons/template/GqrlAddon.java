@@ -14,9 +14,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.lang.invoke.MethodHandles;
 
-public class GqrlAddon extends MeteorAddon {
+public class GqrlAddon extends MeteorAddon{
 	public static final Logger LOG = LogManager.getLogger();
-	public static final Category CATEGORY = new Category("Gqrl", Items.OBSIDIAN.getDefaultStack());
+	public static final Category CATEGORY = new Category("Gqrl");
 
 	@Override
 	public void onInitialize() {
